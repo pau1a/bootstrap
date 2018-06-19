@@ -14,7 +14,22 @@
 </head>
 
 <body>
-
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top"> <!--dark themed with blue background(primary color of bootstrap) and freezed on the top of the page-->
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar"> <!--button toggling navbar on/off on the xs screens-->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Restorante Con Fusion</a> <!--brand place in the navigation-->
+            <div class="collapse navbar-collapse" id="Navbar"> <!--the target content to be toggled on/off when the button is pressed-->
+                <ul class="navbar-nav mr-auto"> <!--Horizontal representation of links. Right margin, push as left as possible. -->
+                    <li class="nav-item active"><a class="nav-link" href="#">Home</a></li> <!--itemization of nav components, each comprised of links inside the a tag-->
+                    <li class="nav-item"><a class="nav-link" href="./aboutus.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>>
+        </div>
+    </nav>
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -30,12 +45,12 @@
 
     <div class="container">
         <div class="row row-content align-items-center">
-            <div class = "col-12 col-sm-4 order-sm-last col-md-3">
+            <div class = "col-12 col-sm-4 order-sm-last col-md-3"> <!--puts to the last column, i.e. to the right-->
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
             <div class = "col col-sm col-md">
                 <h2>Uthappizza</h2>
-                <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                <p class="d-none d-sm-block">A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
             </div>
         </div>
 
@@ -46,7 +61,7 @@
             </div>
             <div class = "col col-sm col-md">
                 <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
             </div>
         </div>
 
@@ -54,10 +69,10 @@
             <div class = "col-12 col-sm-4 col-md-3">
                 <h3>Meet our Culinary Specialists</h3>
             </div>
-            <div class = "col col-sm order-sm-first col-md">
+            <div class = "col col-sm order-sm-first col-md"><!--very first column, always left-->
                 <h2>Alberto Somayya</h2>
                 <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
             </div>
         </div>
     </div>
@@ -69,7 +84,7 @@
                     <h5>Links</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
