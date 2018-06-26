@@ -62,11 +62,13 @@
                     <div class="form-row">
                         <div class="form-group col-sm-4">
                             <label class="sr-only" for="inputEmail">Email address</label>
-                            <input type="email" class="form-control form-control-sm mr-1" id="inputEmail" placeholder="Enter email">
+                            <input type="email" class="form-control form-control-sm mr-1" id="inputEmail"
+                                   placeholder="Enter email">
                         </div>
                         <div class="form-group col-sm-4">
                             <label class="sr-only" for="inputPassword">Password</label>
-                            <input type="password" class="form-control form-control-sm mr-1" id="inputPassword" placeholder="Password">
+                            <input type="password" class="form-control form-control-sm mr-1" id="inputPassword"
+                                   placeholder="Password">
                         </div>
                         <div class="col-sm-auto mt-2 ml-2">
                             <div class="form-check ">
@@ -77,8 +79,96 @@
                         </div>
                     </div>
                     <div class="form-row ">
-                        <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel
+                        </button>
                         <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="reserveTableModal" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Reserve a Table</h3>
+                <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class=" form-group row">
+                        <label for="numberOfGuests" class="col-md-2 col-form-label">Number of Guests</label>
+                        <div class="col">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="numberOfGuests"
+                                       id="numberOfGuests" value="1">
+                                <label class="form-check-label" for="numberOfGuests">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="numberOfGuests"
+                                       id="numberOfGuests2" value="1">
+                                <label class="form-check-label" for="numberOfGuests">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="numberOfGuests"
+                                       id="numberOfGuests3" value="1">
+                                <label class="form-check-label" for="numberOfGuests">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="numberOfGuests"
+                                       id="numberOfGuests4" value="1">
+                                <label class="form-check-label" for="numberOfGuests">4</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="numberOfGuests"
+                                       id="numberOfGuests5" value="1">
+                                <label class="form-check-label" for="numberOfGuests">5</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="numberOfGuests"
+                                       id="numberOfGuests6" value="1">
+                                <label class="form-check-label" for="numberOfGuests">6</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="section" class="col-md-2 col-form-label">Section</label>
+                        <div class="btn-group btn-group-toggle" data-toggle="buttons" id="section">
+                            <label class="btn btn-success active">
+                                <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                                non-smoking
+                            </label>
+                            <label class="btn btn-danger">
+                                <input type="radio" name="options" id="option2" autocomplete="off">
+                                smoking
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="date" class="col-md-2 col-form-label">Date and Time</label>
+                        <div class="col-md-4 col-4 ">
+                            <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                        </div>
+                        <div class="col-4 col-md-4">
+                            <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-md-10 offset-md-2">
+                            <button type="button" class="btn btn-secondary ml-auto" data-dismiss="modal">
+                                Cancel
+                            </button>
+                            <button type="submit" class="btn btn-primary">
+                                Reserve
+                            </button>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -100,11 +190,8 @@
             </div>
 
             <div class="col-12 col-sm-3 align-self-center">
-                <a class=" btn btn-warning btn-sm btn-block"
-                   data-toggle="tooltip" data-html="true"
-                   title="or call us at <br><strong>+996559792324</strong>"
-                   data-placement="bottom"
-                   href="#reserveTable" role="button">Reserve Table</a>
+                <a class=" btn btn-warning btn-sm btn-block " data-toggle="modal" data-target="#reserveTableModal"
+                   role="button">Reserve Table</a>
             </div>
         </div>
     </div>
@@ -126,7 +213,8 @@
                             </h2>
                             <p class="d-none d-sm-block">
                                 A unique combination of Indian Uthappam (pancake) and Italian pizza,
-                                topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and
+                                topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies
+                                and
                                 Buffalo Paneer.
                             </p>
                         </div>
@@ -139,9 +227,11 @@
                                 Weekend Grand Buffet
                                 <span class="badge badge-danger">NEW</span>
                             </h2>
-                            <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five different
+                            <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five
+                                different
                                 salads,
-                                six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and
+                                six enticing appetizers, six main entrees and five choicest desserts. Free flowing
+                                bubbly and
                                 soft
                                 drinks. All for just $19.99 per person
                             </p>
@@ -155,7 +245,8 @@
                             <h4>Executive Chef</h4>
                             <p class="d-none d-sm-block">
                                 Award winning three-star Michelin chef with wide International
-                                experience having worked closely with whos-who in the culinary world, he specializes in creating
+                                experience having worked closely with whos-who in the culinary world, he specializes in
+                                creating
                                 mouthwatering Indo-Italian fusion experiences.
                             </p>
                             </p>
@@ -239,71 +330,6 @@
             </div>
         </div>
     </div>
-
-    <div class="row row-content">
-        <div class="col col-sm-8 ">
-            <div class="card" id="reserveTable">
-                <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
-                <div class="card-body">
-                    <form>
-                        <div class=" form-group row">
-                            <label for="numberOfGuests" class="col-md-2 col-form-label">Number of Guests</label>
-                            <div class="col">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="numberOfGuests"
-                                           id="numberOfGuests" value="1">
-                                    <label class="form-check-label" for="numberOfGuests">1</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="numberOfGuests"
-                                           id="numberOfGuests2" value="1">
-                                    <label class="form-check-label" for="numberOfGuests">2</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="numberOfGuests"
-                                           id="numberOfGuests3" value="1">
-                                    <label class="form-check-label" for="numberOfGuests">3</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="numberOfGuests"
-                                           id="numberOfGuests4" value="1">
-                                    <label class="form-check-label" for="numberOfGuests">4</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="numberOfGuests"
-                                           id="numberOfGuests5" value="1">
-                                    <label class="form-check-label" for="numberOfGuests">5</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="numberOfGuests"
-                                           id="numberOfGuests6" value="1">
-                                    <label class="form-check-label" for="numberOfGuests">6</label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="date" class="col-md-2 col-form-label">Date and Time</label>
-                            <div class="col-md-4 col-4 ">
-                                <input type="text" class="form-control" id="date" name="date" placeholder="Date">
-                            </div>
-                            <div class="col-4 col-md-4">
-                                <input type="text" class="form-control" id="time" name="time" placeholder="Time">
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <div class="col-md-10 offset-md-2">
-                                <button type="submit" class="btn btn-primary">
-                                    Reserve
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 
 <footer class="footer">
@@ -356,11 +382,7 @@
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $('[data-toggle="tooltip"]').tooltip(); //for attribute of this kind, for the particular html tag turn on the tooltip there
-    });
-</script>
+
 </body>
 
 </html>
