@@ -55,7 +55,11 @@
             </div>
 
             <div class="col-12 col-sm-3 align-self-center">
-                <a class=" btn btn-warning btn-sm btn-block" href="#reserveTable" role="button">Reserve Table</a>
+                <a class=" btn btn-warning btn-sm btn-block"
+                   data-toggle="tooltip" data-html="true"
+                   title="or call us at <br><strong>+996559792324</strong>"
+                   data-placement="bottom"
+                   href="#reserveTable" role="button">Reserve Table</a>
             </div>
         </div>
     </div>
@@ -241,6 +245,11 @@
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip(); //for attribute of this kind, for the particular html tag turn on the tooltip there
+    });
+</script>
 </body>
 
 </html>
