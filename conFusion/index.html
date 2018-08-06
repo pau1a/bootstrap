@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link href="css/styles-old.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <title>Ristorante Con Fusion</title>
 </head>
 
@@ -39,8 +39,8 @@
             </ul>
 
             <span class="navbar-text">
-                <a data-toggle="modal" data-target="#loginModal">
-                    <span class="fa fa-sign-in"></span> Login
+                <a id="loginButton">
+                    <span class="fa fa-sign-in" ></span> Login
                 </a>
             </span>
 
@@ -190,7 +190,7 @@
             </div>
 
             <div class="col-12 col-sm-3 align-self-center">
-                <a class=" btn btn-warning btn-sm btn-block " data-toggle="modal" data-target="#reserveTableModal"
+                <a class=" btn btn-warning btn-sm btn-block " id="reserveTableButton"
                    role="button">Reserve Table</a>
             </div>
         </div>
@@ -399,6 +399,12 @@
                 $('#carouselButtons').children('span').removeClass('fa-play');
                 $('#carouselButtons').children('span').addClass('fa-pause');
             }
+        })
+        $('#reserveTableButton').click(function () {
+            $('#reserveTableModal').modal('toggle');
+        })
+        $('#loginButton').click(function () {
+            $('#loginModal').modal('toggle');
         })
     })
 </script>
